@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Al Baruudee Hajj & Umrah | Trusted Pilgrimage Services</title>
+  <meta name="description" content="Professional Hajj, Umrah, visa processing, and travel services. Licensed and trusted pilgrimage agency with flexible payment plans.">
+  
+  <!-- Bootstrap 5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
+  <style>
+    :root {
+      --primary-green: #1a472a;
+      --secondary-green: #2d6a4f;
+      --gold-accent: #d4af37;
+      --light-gold: #f7efd9;
+      --cream-bg: #fefefe;
+      --text-dark: #1a1a1a;
+      --text-light: #555;
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.1);
+      --radius-lg: 16px;
+      --radius-sm: 8px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      color: var(--text-dark);
+      background-color: var(--cream-bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      color: var(--primary-green);
+    }
+
+    /* Enhanced Navigation */
+    .navbar {
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
+      padding: 1rem 0;
+      box-shadow: 0 2px 20px rgba(26, 71, 42, 0.08);
+      transition: var(--transition);
+      z-index: 1050;
+    }
+
+    .navbar.scrolled {
+      padding: 0.75rem 0;
+      box-shadow: 0 4px 30px rgba(26, 71, 42, 0.12);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: var(--primary-green) !important;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .navbar-brand i {
+      color: var(--gold-accent);
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: var(--text-dark) !important;
+      padding: 0.5rem 1rem !important;
+      margin: 0 0.25rem;
+      border-radius: 50px;
+      transition: var(--transition);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--gold-accent) !important;
+      background: rgba(212, 175, 55, 0.1);
+    }
+
+    /* Enhanced Hero Section */
+    .hero {
+      background: linear-gradient(135deg, rgba(26, 71, 42, 0.9) 0%, rgba(45, 106, 79, 0.9) 100%), 
+                  url('makkah.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      padding: 8rem 0 6rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.2) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero .display-4 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      line-height: 1.2;
+    }
+
+    .hero .lead {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      opacity: 0.95;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold-accent), #e6c34e);
+      border: none;
+      padding: 0.875rem 2rem;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: var(--transition);
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+    }
+
+    .btn-outline-light {
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      padding: 0.875rem 2rem;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: var(--transition);
+    }
+
+    .btn-outline-light:hover {
+      background: white;
+      color: var(--primary-green);
+      transform: translateY(-3px);
+    }
+
+    /* Contact Info Banner */
+    .contact-banner {
+      background: linear-gradient(90deg, var(--primary-green), var(--secondary-green));
+      color: white;
+      padding: 1rem 0;
+      position: relative;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(26, 71, 42, 0.15);
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      font-size: 0.95rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+    }
+
+    .contact-item:hover {
+      color: var(--light-gold);
+      transform: translateY(-2px);
+    }
+
+    .contact-item i {
+      color: var(--gold-accent);
+    }
+
+    /* Enhanced Service Cards */
+    .service-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      height: 100%;
+      transition: var(--transition);
+      border: 1px solid rgba(212, 175, 55, 0.15);
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--gold-accent), var(--secondary-green));
+      transform: scaleY(0);
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .service-card:hover::before {
+      transform: scaleY(1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(212, 175, 55, 0.3);
+    }
+
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--light-gold), #fff9e6);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      color: var(--gold-accent);
+      border: 2px solid rgba(212, 175, 55, 0.2);
+    }
+
+    /* Enhanced Testimonials Section */
+    .testimonials-section {
+      background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonials-section::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+      z-index: 0;
+    }
+
+    /* Swiper Customization */
+    .swiper {
+      width: 100%;
+      height: 420px;
+      padding: 30px 0;
+    }
+
+    .swiper-slide {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(212, 175, 55, 0.1);
+      transition: var(--transition);
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      cursor: grab;
+    }
+
+    .swiper-slide:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .swiper-slide::before {
+      content: '"';
+      position: absolute;
+      top: 1rem;
+      left: 1.5rem;
+      font-size: 4rem;
+      font-family: 'Playfair Display', serif;
+      color: rgba(212, 175, 55, 0.2);
+      line-height: 1;
+    }
+
+    .testimonial-text {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+      flex-grow: 1;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: auto;
+    }
+
+    .author-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--light-gold), #e6d9b6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--gold-accent);
+      border: 2px solid var(--gold-accent);
+    }
+
+    .author-info h5 {
+      margin-bottom: 0.25rem;
+      font-size: 1.1rem;
+    }
+
+    .author-info small {
+      color: var(--gold-accent);
+      font-weight: 500;
+    }
+
+    .swiper-pagination {
+      position: relative;
+      margin-top: 2rem;
+    }
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: rgba(212, 175, 55, 0.3);
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--gold-accent);
+      transform: scale(1.2);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: var(--gold-accent);
+      background: rgba(255, 255, 255, 0.9);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: var(--shadow-md);
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 1.2rem;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background: var(--gold-accent);
+      color: white;
+    }
+
+    /* Gallery Section */
+    .gallery-section {
+      background: linear-gradient(180deg, #fff 0%, #f8f5f0 100%);
+      padding: 5rem 0;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: var(--shadow-md);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(26, 71, 42, 0.9), transparent 50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+      color: white;
+      opacity: 0;
+      transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    /* Gallery Modal */
+    .modal-gallery {
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-gallery .modal-content {
+      background: transparent;
+      border: none;
+    }
+
+    .modal-gallery .modal-header {
+      border: none;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1060;
+    }
+
+    .modal-gallery .modal-header .btn-close {
+      filter: invert(1);
+      opacity: 0.8;
+      background-size: 1.5rem;
+    }
+
+    .modal-gallery .modal-body {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-gallery-img {
+      max-height: 80vh;
+      max-width: 90vw;
+      object-fit: contain;
+    }
+
+    /* Enhanced About Section */
+    .about-section {
+      background: linear-gradient(180deg, #fff 0%, #f8f5f0 100%);
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+      z-index: 0;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+
+    .feature-list li {
+      padding: 0.75rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.05rem;
+    }
+
+    .feature-list i {
+      color: var(--gold-accent);
+      font-size: 1.2rem;
+    }
+
+    /* Enhanced Footer */
+    .footer {
+      background: linear-gradient(135deg, var(--primary-green), #143221);
+      color: white;
+      padding: 4rem 0 2rem;
+      position: relative;
+    }
+
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-accent), transparent);
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-accent);
+      transform: translateX(5px);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero .display-4 {
+        font-size: 2.5rem;
+      }
+      
+      .hero .lead {
+        font-size: 1.1rem;
+      }
+      
+      .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+      
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      }
+      
+      .swiper {
+        height: 380px;
+      }
+      
+      .swiper-slide {
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero {
+        padding: 6rem 0 4rem;
+      }
+      
+      .hero .display-4 {
+        font-size: 2rem;
+      }
+      
+      .service-card {
+        padding: 1.5rem;
+      }
+      
+      .swiper {
+        height: 350px;
+      }
+      
+      .swiper-slide {
+        padding: 1.25rem;
+      }
+    }
+
+    /* Animation classes */
+    .fade-in {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Rating Stars */
+    .testimonial-rating {
+      color: var(--gold-accent);
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-rating i {
+      margin-right: 2px;
+    }
+
+    /* Testimonial Grid View */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .testimonial-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-toggle-btn {
+      background: white;
+      border: 2px solid var(--primary-green);
+      color: var(--primary-green);
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .testimonial-toggle-btn.active {
+      background: var(--primary-green);
+      color: white;
+    }
+
+    .testimonial-toggle-btn:hover:not(.active) {
+      background: rgba(26, 71, 42, 0.1);
+    }
+    
+    /* Fallback for missing images */
+    .img-fallback {
+      background: linear-gradient(135deg, var(--light-gold), #e6d9b6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-accent);
+      font-size: 2rem;
+      flex-direction: column;
+    }
+    
+    .img-fallback i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Contact Banner -->
+  <div class="contact-banner">
+    <div class="container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>No 2 Road 3, Alafia Estate Sanyo, Ibadan, Oyo State, Nigeria</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+966 56 1830 932 | +234 901 235 1630 | +234 901 176 1557</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="fas fa-mosque"></i>
+        Al Baruudee Hajj & Umrah
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-10 col-xl-9">
+          <h1 class="display-4 mb-4" data-aos="fade-up">Your Journey to Spiritual Fulfillment Begins Here</h1>
+          <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">
+            Al Baruudee Hajj & Umrah provides comprehensive pilgrimage services with integrity, 
+            expertise, and personalized care. Trust us with your spiritual journey.
+          </p>
+          <div class="hero-cta" data-aos="fade-up" data-aos-delay="200">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <i class="fas fa-calendar-check me-2"></i>Book Your Journey
+            </a>
+            <a href="#testimonials" class="btn btn-outline-light btn-lg">
+              <i class="fas fa-star me-2"></i>See Testimonials
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5" data-aos="fade-up">
+    <div class="container py-5">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="mb-3">Our Complete Range of Services</h2>
+          <p class="text-muted">Providing end-to-end solutions for your pilgrimage and travel needs</p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-kaaba"></i>
+            </div>
+            <h4 class="mb-3">Hajj & Umrah Visa Processing</h4>
+            <p class="text-muted">Complete visa processing with documentation assistance and government liaison services.</p>
+            <div class="mt-4">
+              <a href="#contact" class="btn btn-sm btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-passport"></i>
+            </div>
+            <h4 class="mb-3">Passport Processing</h4>
+            <p class="text-muted">Fast-track passport applications and renewals with expert guidance.</p>
+            <div class="mt-4">
+              <a href="#contact" class="btn btn-sm btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-plane"></i>
+            </div>
+            <h4 class="mb-3">Flight Booking</h4>
+            <p class="text-muted">Competitive airfares with flexible dates and group discounts for pilgrims.</p>
+            <div class="mt-4">
+              <a href="#contact" class="btn btn-sm btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-train"></i>
+            </div>
+            <h4 class="mb-3">Train Booking</h4>
+            <p class="text-muted">Seamless train ticket reservations for inter-city travel in Saudi Arabia.</p>
+            <div class="mt-4">
+              <a href="#contact" class="btn btn-sm btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-hotel"></i>
+            </div>
+            <h4 class="mb-3">Accommodation</h4>
+            <p class="text-muted">Premium hotel bookings near Haram with verified comfort and safety.</p>
+            <div class="mt-4">
+              <a href="#contact" class="btn btn-sm btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h4 class="mb-3">And Lots More...</h4>
+            <p class="text-muted">Transportation, guided tours, medical assistance, and comprehensive support services.</p>
+            <div class="mt-4">
+              <a href="#contact" class="btn btn-sm btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="mb-3">What Our Pilgrims Say</h2>
+          <p class="text-muted">Hear from over 30 satisfied African clients who completed their spiritual journeys with us</p>
+        </div>
+      </div>
+
+      <!-- View Toggle -->
+      <div class="testimonial-toggle">
+        <button class="testimonial-toggle-btn active" id="sliderViewBtn">
+          <i class="fas fa-sliders-h me-2"></i>Slider View
+        </button>
+        <button class="testimonial-toggle-btn" id="gridViewBtn">
+          <i class="fas fa-th-large me-2"></i>Grid View
+        </button>
+      </div>
+
+      <!-- Slider View -->
+      <div class="testimonials-slider-view" id="sliderView">
+        <div class="swiper testimonialsSwiper">
+          <div class="swiper-wrapper" id="testimonialsSlider">
+            <!-- Testimonials will be dynamically loaded here -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <!-- Grid View -->
+      <div class="testimonials-grid-view" id="gridView" style="display: none;">
+        <div class="testimonial-grid" id="testimonialsGrid">
+          <!-- Testimonials will be dynamically loaded here -->
+        </div>
+        <div class="text-center mt-4">
+          <button class="btn btn-outline-primary" id="loadMoreTestimonials">
+            <i class="fas fa-plus me-2"></i>Load More Testimonials
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="mb-3">Our Pilgrimage Gallery</h2>
+          <p class="text-muted">Browse through our collection of memorable journeys and satisfied pilgrims</p>
+        </div>
+      </div>
+      
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryContainer">
+        <!-- Images will be dynamically loaded -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h2 class="mb-4">Why Choose Al Baruudee?</h2>
+          <p class="lead mb-4">
+            With years of experience in pilgrimage services, we've helped thousands of Muslims fulfill their religious duties with ease and comfort.
+          </p>
+          
+          <ul class="feature-list">
+            <li>
+              <i class="fas fa-shield-alt"></i>
+              <span><strong>Licensed & Certified:</strong> Fully authorized Hajj and Umrah service provider</span>
+            </li>
+            <li>
+              <i class="fas fa-users"></i>
+              <span><strong>Experienced Team:</strong> Multilingual guides and support staff</span>
+            </li>
+            <li>
+              <i class="fas fa-hand-holding-usd"></i>
+              <span><strong>Flexible Payment:</strong> Installment plans and transparent pricing</span>
+            </li>
+            <li>
+              <i class="fas fa-headset"></i>
+              <span><strong>24/7 Support:</strong> Round-the-clock assistance during your journey</span>
+            </li>
+            <li>
+              <i class="fas fa-award"></i>
+              <span><strong>Proven Track Record:</strong> Thousands of satisfied pilgrims since inception</span>
+            </li>
+          </ul>
+          
+          <div class="mt-5">
+            <a href="#contact" class="btn btn-primary me-3">
+              <i class="fas fa-calendar me-2"></i>Book Consultation
+            </a>
+            <a href="tel:+2349012351630" class="btn btn-outline-primary">
+              <i class="fas fa-phone me-2"></i>Call Now
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
+          <div class="position-relative">
+            <img src="image 3.jpeg" 
+                 alt="About Al Baruudee" 
+                 class="img-fluid rounded-4 shadow-lg"
+                 onerror="handleImageError(this)">
+            <div class="position-absolute bottom-0 start-0 bg-white p-4 rounded-4 shadow-lg m-3" style="max-width: 300px;">
+              <h5 class="text-primary mb-2">5+ Years Experience</h5>
+              <p class="small mb-0">Trusted by pilgrims across West Africa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container py-5">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="mb-3">Contact Us Today</h2>
+          <p class="text-muted">Begin your spiritual journey with our expert guidance</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="card border-0 shadow-lg" data-aos="zoom-in">
+            <div class="card-body p-5">
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control form-control-lg" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control form-control-lg" required>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control form-control-lg" required>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="form-label">Service Interested In</label>
+                    <select class="form-select form-select-lg">
+                      <option>Hajj Package</option>
+                      <option>Umrah Package</option>
+                      <option>Visa Processing</option>
+                      <option>Passport Processing</option>
+                      <option>Flight Booking</option>
+                      <option>Train Booking</option>
+                      <option>Other Services</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control form-control-lg" rows="4"></textarea>
+                  </div>
+                  <div class="col-md-12 mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                      <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="text-center mt-5">
+            <h5 class="mb-4">Direct Contact Channels</h5>
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+              <a href="tel:+966561830932" class="btn btn-outline-primary">
+                <i class="fas fa-phone me-2"></i>KSA: +966 56 1830 932
+              </a>
+              <a href="tel:+2349012351630" class="btn btn-outline-primary">
+                <i class="fas fa-phone me-2"></i>NG: +234 901 235 1630
+              </a>
+              <a href="tel:+2349011761557" class="btn btn-outline-primary">
+                <i class="fas fa-phone me-2"></i>NG: +234 901 176 1557
+              </a>
+            </div>
+            
+            <div class="mt-4">
+              <p class="mb-1">
+                <i class="fas fa-envelope me-2 text-primary"></i>
+                <strong>Email:</strong> bolarinwajaamih@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h4 class="mb-4">
+            <i class="fas fa-mosque me-2"></i>
+            Al Baruudee Hajj & Umrah
+          </h4>
+          <p class="mb-4" style="color: rgba(255,255,255,0.8);">
+            Your trusted partner for spiritual journeys. Providing comprehensive Hajj and Umrah services with integrity and excellence.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/2349012351630" class="text-white fs-5" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="mb-4">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+            <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+            <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4">
+          <h5 class="mb-4">Contact Info</h5>
+          <ul class="footer-links">
+            <li>
+              <a href="https://maps.google.com/?q=No 2 Road 3, Alafia Estate Sanyo, Ibadan, Oyo State, Nigeria" target="_blank">
+                <i class="fas fa-map-marker-alt"></i>
+                No 2 Road 3, Alafia Estate Sanyo, Ibadan, Oyo State, Nigeria
+              </a>
+            </li>
+            <li>
+              <a href="tel:+966561830932">
+                <i class="fas fa-phone"></i>
+                +966 56 1830 932 (KSA)
+              </a>
+            </li>
+            <li>
+              <a href="tel:+2349012351630">
+                <i class="fas fa-phone"></i>
+                +234 901 235 1630 (NG)
+              </a>
+            </li>
+            <li>
+              <a href="tel:+2349011761557">
+                <i class="fas fa-phone"></i>
+                +234 901 176 1557 (NG)
+              </a>
+            </li>
+            <li>
+              <a href="mailto:bolarinwajaamih@gmail.com">
+                <i class="fas fa-envelope"></i>
+                bolarinwajaamih@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <hr class="my-5" style="border-color: rgba(255,255,255,0.1);">
+      
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0" style="color: rgba(255,255,255,0.7);">
+            &copy; <span id="currentYear"></span> Al Baruudee Hajj & Umrah. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Gallery Modal -->
+  <div class="modal fade modal-gallery" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" src="" alt="" class="modal-gallery-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/2349012351630?text=Hello%20Al%20Baruudee,%20I%20need%20information%20about%20your%20services" 
+     class="btn btn-success rounded-circle p-3 position-fixed" 
+     style="bottom: 30px; right: 30px; z-index: 1000;"
+     target="_blank">
+    <i class="fab fa-whatsapp fs-4"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script>
+    // 30 African Testimonials Data
+    const testimonials = [
+      {
+        name: "Alhaji Ahmed Ibrahim",
+        location: "Kano, Nigeria",
+        testimonial: "Al Baruudee made our Hajj journey seamless from start to finish. Their attention to detail and 24/7 support was exceptional. Highly recommended!",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Hajia Fatima Bello",
+        location: "Lagos, Nigeria",
+        testimonial: "The Umrah package was perfectly organized. Accommodation near Haram, knowledgeable guides, and excellent transportation. Will definitely use them again.",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Dr. Yusuf Abdullahi",
+        location: "Accra, Ghana",
+        testimonial: "Outstanding service! They handled everything - visa, flights, accommodation. The payment plan made it affordable for our whole family.",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Alhaja Aisha Mohammed",
+        location: "Ibadan, Nigeria",
+        testimonial: "This was my first Umrah and Al Baruudee made it stress-free. The guides were knowledgeable and patient with all my questions. JazakAllah khair!",
+        rating: 4,
+        year: "2023"
+      },
+      {
+        name: "Omar Diallo",
+        location: "Dakar, Senegal",
+        testimonial: "Professional service from booking to return. The hotel was walking distance to Masjid al-Haram. Perfect organization for group travel.",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Hajia Zainab Usman",
+        location: "Abuja, Nigeria",
+        testimonial: "My family's Hajj experience was beautiful thanks to Al Baruudee. Everything was well-coordinated and the spiritual guidance was excellent.",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Kwame Mensah",
+        location: "Kumasi, Ghana",
+        testimonial: "As a first-time pilgrim, I was nervous. But Al Baruudee's team guided me through every step. The entire process was smooth and professional.",
+        rating: 4,
+        year: "2024"
+      },
+      {
+        name: "Alhaji Musa Sani",
+        location: "Kaduna, Nigeria",
+        testimonial: "I've used other agencies before, but Al Baruudee is by far the best. Their transparency in pricing and clear communication sets them apart.",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Fatoumata Diop",
+        location: "Bamako, Mali",
+        testimonial: "Excellent French-speaking guides made the journey comfortable for my elderly parents. The medical support was also very reassuring.",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Alhaji Tunde Ogunleye",
+        location: "Port Harcourt, Nigeria",
+        testimonial: "The VIP Hajj package was worth every penny. AC tents in Mina, comfortable transportation, and excellent food. Top-notch service!",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Amina Konate",
+        location: "Ouagadougou, Burkina Faso",
+        testimonial: "As a solo female traveler, I felt completely safe and supported throughout my Umrah journey. The female guides were amazing.",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Alhaji Kabiru Adamu",
+        location: "Zaria, Nigeria",
+        testimonial: "Our group of 25 people was handled perfectly. From visa processing to flight arrangements, everything was coordinated flawlessly.",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Hajia Binta Jallow",
+        location: "Banjul, Gambia",
+        testimonial: "The spiritual guides were very knowledgeable about the rituals. They made sure we understood each step of Umrah properly.",
+        rating: 4,
+        year: "2024"
+      },
+      {
+        name: "Dr. Chukwuemeka Okoro",
+        location: "Enugu, Nigeria",
+        testimonial: "Medical emergency during Hajj was handled professionally. Their medical team was available 24/7 and provided excellent care.",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Mariam Traore",
+        location: "Conakry, Guinea",
+        testimonial: "The family package was perfect for us. Children's activities kept them engaged while we performed our rituals. Well thought out!",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Alhaji Suleiman Bello",
+        location: "Sokoto, Nigeria",
+        testimonial: "I've performed Hajj 3 times with different agencies. Al Baruudee provided the most comfortable and organized experience.",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Hajia Hadiza Ali",
+        location: "Katsina, Nigeria",
+        testimonial: "The pre-departure orientation was very helpful. We knew exactly what to expect and were well-prepared for the journey.",
+        rating: 4,
+        year: "2024"
+      },
+      {
+        name: "Ibrahim Sow",
+        location: "Dakar, Senegal",
+        testimonial: "Flight delays were handled professionally. The team kept us informed and made alternative arrangements immediately.",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Alhaji Abdulrahaman Mohammed",
+        location: "Maiduguri, Nigeria",
+        testimonial: "The pay-small-small plan made Hajj affordable for me. Without this flexible payment option, I couldn't have gone.",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Hajia Asmau Ahmed",
+        location: "Gusau, Nigeria",
+        testimonial: "Special dietary requirements were accommodated without issues. The hotel staff was informed and very cooperative.",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Mohammed Keita",
+        location: "Bamako, Mali",
+        testimonial: "The ziyarah tours were educational and spiritually uplifting. Visiting historical sites with knowledgeable guides enriched our experience.",
+        rating: 4,
+        year: "2024"
+      },
+      {
+        name: "Alhaji Bashiru Ibrahim",
+        location: "Yola, Nigeria",
+        testimonial: "Emergency contact was always available. When we had questions at 2 AM, someone answered immediately. Excellent support!",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Hajia Khadija Musa",
+        location: "Bauchi, Nigeria",
+        testimonial: "The ladies' group was well-organized with female guides and separate transportation. Felt very comfortable throughout.",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Ousmane Ndiaye",
+        location: "Dakar, Senegal",
+        testimonial: "Document processing was faster than expected. We got our visas in record time thanks to Al Baruudee's efficient team.",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Alhaji Jamilu Abubakar",
+        location: "Jos, Nigeria",
+        testimonial: "Hotel location was perfect - 5 minutes walk to Haram. Couldn't ask for better accommodation during Hajj season.",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Hajia Rabi Suleiman",
+        location: "Minna, Nigeria",
+        testimonial: "The spiritual lectures during the journey were enlightening. Learned so much about the significance of each ritual.",
+        rating: 4,
+        year: "2023"
+      },
+      {
+        name: "Abdoulaye Traore",
+        location: "Bobo-Dioulasso, Burkina Faso",
+        testimonial: "Transportation between Makkah, Madinah and Mina was comfortable and on time. Never had to wait or worry about transport.",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Alhaji Umar Farouk",
+        location: "Kano, Nigeria",
+        testimonial: "As an elderly pilgrim, I appreciated the special assistance provided. Wheelchair service and personal attention was excellent.",
+        rating: 5,
+        year: "2023"
+      },
+      {
+        name: "Hajia Hafsat Yahaya",
+        location: "Zamfara, Nigeria",
+        testimonial: "The group cohesion was amazing. Made lifelong friends during the journey. Al Baruudee creates a family atmosphere.",
+        rating: 5,
+        year: "2024"
+      },
+      {
+        name: "Dr. Issa Diop",
+        location: "Dakar, Senegal",
+        testimonial: "Medical facilities and doctors accompanying the group were top-notch. Gave us peace of mind throughout the pilgrimage.",
+        rating: 5,
+        year: "2023"
+      }
+    ];
+
+    // Gallery Data with your local images
+    const galleryImages = [
+      {
+        url: 'image 2.jpeg',
+        title: 'Makkah at Sunset',
+        description: 'Golden hour at the Holy Mosque'
+      },
+      {
+        url: 'image 3.jpeg',
+        title: 'Pilgrims at Prayer',
+        description: 'Spiritual gathering in Madinah'
+      },
+      {
+        url: 'image 4.jpeg',
+        title: 'Kaaba Interior',
+        description: 'The heart of Islam'
+      },
+      {
+        url: 'image 5.jpeg',
+        title: 'Group Departure',
+        description: 'Organized travel arrangements'
+      },
+      {
+        url: 'image 6.jpeg',
+        title: 'Premium Accommodation',
+        description: 'Comfort near Haram'
+      },
+      {
+        url: 'image 10.jpeg',
+        title: 'Guided Ziyarah',
+        description: 'Historical sites tours'
+      },
+      {
+        url: 'image 8.jpeg',
+        title: 'Happy Pilgrims',
+        description: 'Successful journey completion'
+      },
+      {
+        url: 'makkah.jpg',
+        title: 'Holy Makkah',
+        description: 'The sacred city'
+      },
+      {
+        url: 'image 9.jpeg',
+        title: 'Holy Makkah',
+        description: 'The sacred city'
+      },
+       {
+        url: 'image 11.jpeg',
+        title: 'Holy Makkah',
+        description: 'The sacred city'
+      },
+    ];
+
+    function handleImageError(img) {
+      img.onerror = null;
+      img.parentElement.innerHTML = '<div class="img-fallback w-100 h-100 rounded-4"><i class="fas fa-mosque"></i><div>About Al Baruudee</div></div>';
+    }
+
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+
+    // Update copyright year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! We will contact you shortly.');
+      this.reset();
+    });
+
+    // Render rating stars
+    function renderRating(rating) {
+      let stars = '';
+      for (let i = 0; i < 5; i++) {
+        if (i < rating) {
+          stars += '<i class="fas fa-star"></i>';
+        } else {
+          stars += '<i class="far fa-star"></i>';
+        }
+      }
+      return stars;
+    }
+
+    // Get icon based on name (simplified - no external avatars)
+    function getAuthorIcon(name) {
+      const isMale = name.toLowerCase().includes('alhaji') || name.toLowerCase().includes('dr.') || 
+                    name.toLowerCase().includes('umar') || name.toLowerCase().includes('ahmed') ||
+                    name.toLowerCase().includes('ibrahim') || name.toLowerCase().includes('yusuf') ||
+                    name.toLowerCase().includes('musa') || name.toLowerCase().includes('abdullahi') ||
+                    name.toLowerCase().includes('kwame') || name.toLowerCase().includes('ousmane') ||
+                    name.toLowerCase().includes('abdoulaye') || name.toLowerCase().includes('issac') ||
+                    name.toLowerCase().includes('mohammed') || name.toLowerCase().includes('jamilu') ||
+                    name.toLowerCase().includes('suleiman') || name.toLowerCase().includes('bashiru') ||
+                    name.toLowerCase().includes('kabiru') || name.toLowerCase().includes('chukwuemeka') ||
+                    name.toLowerCase().includes('tunde') || name.toLowerCase().includes('omar');
+      
+      return isMale ? '<i class="fas fa-user"></i>' : '<i class="fas fa-user-circle"></i>';
+    }
+
+    // Initialize Swiper for testimonials
+    let testimonialsSwiper = null;
+
+    function initTestimonialSwiper() {
+      testimonialsSwiper = new Swiper('.testimonialsSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    }
+
+    // Render testimonials for slider view
+    function renderTestimonialSlider() {
+      const sliderContainer = document.getElementById('testimonialsSlider');
+      sliderContainer.innerHTML = '';
+      
+      testimonials.forEach((testimonial, index) => {
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        
+        slide.innerHTML = `
+          <div class="testimonial-rating">
+            ${renderRating(testimonial.rating)}
+          </div>
+          <div class="testimonial-text">
+            ${testimonial.testimonial}
+          </div>
+          <div class="testimonial-author">
+            <div class="author-icon">
+              ${getAuthorIcon(testimonial.name)}
+            </div>
+            <div class="author-info">
+              <h5>${testimonial.name}</h5>
+              <small>${testimonial.location} • ${testimonial.year}</small>
+            </div>
+          </div>
+        `;
+        
+        sliderContainer.appendChild(slide);
+      });
+      
+      if (testimonialsSwiper) {
+        testimonialsSwiper.destroy();
+      }
+      initTestimonialSwiper();
+    }
+
+    // Render testimonials for grid view
+    let gridTestimonialsLoaded = 0;
+    const gridTestimonialsPerLoad = 9;
+
+    function renderTestimonialGrid(loadMore = false) {
+      const gridContainer = document.getElementById('testimonialsGrid');
+      
+      if (!loadMore) {
+        gridContainer.innerHTML = '';
+        gridTestimonialsLoaded = 0;
+      }
+      
+      const testimonialsToShow = testimonials.slice(
+        gridTestimonialsLoaded, 
+        gridTestimonialsLoaded + gridTestimonialsPerLoad
+      );
+      
+      testimonialsToShow.forEach((testimonial, index) => {
+        const gridItem = document.createElement('div');
+        gridItem.className = 'testimonial-card fade-in';
+        
+        gridItem.innerHTML = `
+          <div class="testimonial-rating">
+            ${renderRating(testimonial.rating)}
+          </div>
+          <div class="testimonial-text">
+            ${testimonial.testimonial}
+          </div>
+          <div class="testimonial-author">
+            <div class="author-icon">
+              ${getAuthorIcon(testimonial.name)}
+            </div>
+            <div class="author-info">
+              <h5>${testimonial.name}</h5>
+              <small>${testimonial.location} • ${testimonial.year}</small>
+            </div>
+          </div>
+        `;
+        
+        gridContainer.appendChild(gridItem);
+      });
+      
+      gridTestimonialsLoaded += testimonialsToShow.length;
+      
+      // Update load more button
+      const loadMoreBtn = document.getElementById('loadMoreTestimonials');
+      if (gridTestimonialsLoaded >= testimonials.length) {
+        loadMoreBtn.style.display = 'none';
+      } else {
+        loadMoreBtn.style.display = 'inline-block';
+        loadMoreBtn.innerHTML = `<i class="fas fa-plus me-2"></i>Load More (${testimonials.length - gridTestimonialsLoaded} remaining)`;
+      }
+    }
+
+    // Toggle between slider and grid view
+    document.getElementById('sliderViewBtn').addEventListener('click', function() {
+      this.classList.add('active');
+      document.getElementById('gridViewBtn').classList.remove('active');
+      document.getElementById('sliderView').style.display = 'block';
+      document.getElementById('gridView').style.display = 'none';
+      renderTestimonialSlider();
+    });
+
+    document.getElementById('gridViewBtn').addEventListener('click', function() {
+      this.classList.add('active');
+      document.getElementById('sliderViewBtn').classList.remove('active');
+      document.getElementById('sliderView').style.display = 'none';
+      document.getElementById('gridView').style.display = 'block';
+      renderTestimonialGrid();
+    });
+
+    // Load more testimonials for grid view
+    document.getElementById('loadMoreTestimonials').addEventListener('click', function() {
+      renderTestimonialGrid(true);
+    });
+
+    // Gallery Implementation
+    function renderGallery() {
+      const galleryContainer = document.getElementById('galleryContainer');
+      galleryContainer.innerHTML = '';
+      
+      galleryImages.forEach((image, index) => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = 'gallery-item fade-in';
+        
+        galleryItem.innerHTML = `
+          <img src="${image.url}" alt="${image.title}" loading="lazy" 
+               onerror="this.onerror=null; this.parentElement.classList.add('img-fallback'); this.remove(); this.parentElement.innerHTML='<i class=\"fas fa-image\"></i><div class=\"mt-2\">${image.title}</div>';">
+          <div class="gallery-overlay">
+            <h5 class="mb-1">${image.title}</h5>
+            <small>${image.description}</small>
+          </div>
+        `;
+        
+        galleryItem.addEventListener('click', () => {
+          openGalleryModal(index);
+        });
+        
+        galleryContainer.appendChild(galleryItem);
+      });
+    }
+
+    function openGalleryModal(index) {
+      const modal = new bootstrap.Modal(document.getElementById('galleryModal'));
+      const modalImage = document.getElementById('modalImage');
+      
+      modalImage.src = galleryImages[index].url;
+      modalImage.alt = galleryImages[index].title;
+      
+      // Add error handler for modal image
+      modalImage.onerror = function() {
+        this.src = 'makkah.jpg';
+      };
+      
+      modal.show();
+    }
+
+    // Initialize gallery
+    renderGallery();
+
+    // Active nav link highlighting
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', function() {
+      let scrollY = window.pageYOffset;
+      
+      sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 100;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+        
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight && navLink) {
+          document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+          navLink.classList.add('active');
+        }
+      });
+    });
+
+    // Initialize testimonials
+    renderTestimonialSlider();
+    
+    // Add error handling for all images
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('img').forEach(img => {
+        img.onerror = function() {
+          if (!this.parentElement.classList.contains('img-fallback')) {
+            this.parentElement.classList.add('img-fallback');
+            const title = this.alt || 'Image';
+            this.parentElement.innerHTML = `<i class="fas fa-image"></i><div class="mt-2">${title}</div>`;
+          }
+        };
+      });
+    });
+  </script>
+</body>
+</html>
